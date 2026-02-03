@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Angu ❤️ Achu</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="love-bg"></div>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <audio id="music" loop>
+      <source src="./i-wanna-be-yours.mp3" type="audio/mp3" />
+    </audio>
+
+    <section>
+      <h1>My dear Angu 💖</h1>
+      <p>This is my heart… written just for you.</p>
+
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="./valentines-day.mp4" type="video/mp4" />
+      </video>
+      <div class="swipe-indicator">
+        <p>SWIPE UP</p>
+        <div class="swipe-up">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Journey 📸</h2>
+      <div class="timeline">
+        <div class="moment">
+          <img src="./img_0409.jpg" />
+          <p>Where it all began 💫</p>
+        </div>
+        <div class="moment">
+          <img src="./img_0618.png" />
+          <p>Favorite memory ❤️</p>
+        </div>
+        <div class="moment">
+          <img src="./img_0748.png" />
+          <p>Forever us 🌹</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Words From My Heart 💌</h2>
+      <div id="quote" class="quote show">
+        You are my today and all of my tomorrows 💕
+      </div>
+      <div class="heart">
+        <img src="./img_1143.jpg" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Why I Love You ❤️</h2>
+      <div class="cards">
+        <div class="card">Your smile heals me 😊</div>
+        <div class="card">You are my peace 🕊️</div>
+        <div class="card">You feel like home 🏡</div>
+        <div class="card">You are my always 💖</div>
+      </div>
+    </section>
+
+    <section id="forever" class="proposal">
+      <div class="proposal-card">
+        <h2>One Last Question 💍</h2>
+        <p class="proposal-text">Angu… will you be my Valentine?</p>
+
+        <div class="btn-wrap">
+          <button id="yesBtn" class="btn premium" onclick="yesClicked()">
+            YES 💘
+          </button>
+          <button class="btn no" onclick="noClicked()">NO 🙈</button>
+        </div>
+
+        <div id="ring" class="ring">💍</div>
+      </div>
+    </section>
+
+    <!-- POPUP -->
+    <div id="lovePopup" onclick="closePopup()">
+      <div class="popupCard popupBeat">
+        <div class="slideshow">
+          <img class="slide active" src="./angu1.jpg" />
+          <img class="slide" src="./angu2.jpg" />
+          <img class="slide" src="./angu3.jpg" />
+          <img class="slide" src="./angu4.jpg" />
+        </div>
+        <h2>I Love You Baby ❤️</h2>
+        <p>You are my forever</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
